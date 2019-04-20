@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<title> Tattoo Travel Blog</title>
+</head>
+<header>
+  <div class="navbar">
+  <a href="index.html"><i class="fas fa-user-alt"></i> About</a>
+  <a href="places_traveled.html"><i class="fas fa-map-marked-alt"></i> Places</a> 
+  <a class="current" href="pictures.html"><i class="far fa-images"></i> Tattoo Collection</a>
+  <a href="next.html"><i class="fas fa-plane-departure"></i> Bucket list</a>
+</div>
+
+<h1> These are some of my tattoos.. <i class="fas fa-pen-alt" id="icon-color"></i></h1>
+
+</header>
+
+<body>
+<main>
+<a class="skip-main" href="#main">Skip to main content</a>  
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="images/california.jpg" alt= "California Tattoo" onclick="openModal();currentSlide(1)" class="hover-shadow" id="img">
+  </div>
+  <div class="column">
+    <img src="images/faith.jpg" alt="Faith Tattoo" onclick="openModal();currentSlide(2)" class="hover-shadow" id="img">
+  </div>
+  <div class="column">
+    <img src="images/llama.jpg" alt="Llama Tattoo" onclick="openModal();currentSlide(3)" class="hover-shadow" id="img">
+  </div>
+  <div class="column">
+    <img src="images/lotusflower.jpg" alt="Lotus Flower Tattoo" onclick="openModal();currentSlide(4)" class="hover-shadow" id="img">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/california.jpg" alt="California Tattoo" id="pics">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/faith.jpg" alt="Faith Tattoo" id="pics">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/llama.jpg" alt= "Llama Tattoo" id="pics">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/lotusflower.jpg" alt="Lotus Flower Tattoo" id="pics">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="images/california.jpg" onclick="currentSlide(1)" alt="California Tattoo, Home">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/faith.jpg" onclick="currentSlide(2)" alt="Faith Tatoo, Cape Town-South Africa (2018)">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/llama.jpg" onclick="currentSlide(3)" alt="Llama Tatoo, Lima Peru (2017)">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/lotusflower.jpg" onclick="currentSlide(4)" alt="Lotus Flower Tatto (resiliency), Bangkok-Thailand (2018)">
+    </div>
+  </div>
+</div>
+<!-- Accordion for Story Behind Tattoos -->
+<button class="accordion2">California Tattoo: Select to learn more </button>
+<div class="panel">
+  <p>California is home.  I was born and raised in Ontario, California to immigrant parents. I come from a lineage of warriors, and am happy with the community I have back home.  Deciding to attend the University of Michigan was a tough choice, because it meant uprooting the life I had and moving across the country. However, I will always remember where I come from, and the community that has carried me here.  I am forever grateful and truly blessed. I will always have  alot of love for my home state.</p>
+</div>
+
+<button class="accordion2">Faith Tattoo: Select here to learn more</button>
+<div class="panel">
+  <p>Summer 2018, I spent nine weeks in beautiful Cape Town, South Africa.  Above the many lessons I learned from that trip, the biggest and most significance has been staying strongly rooted in my faith. I respect peoples different belief systems, and I don't claim to be religious by any means. I'm strongly rooted in knowing that I should always walk forward with faith in my heart and strength as my armour.</p>
+</div>
+
+<button class="accordion2">Llama Tattoo: Select here to learn more </button>
+<div class="panel">
+  <p>This one was just a fun, spontaneous tattoo. Summer 2017 I got to spend thirteen weeks in Lima, Peru. Some of my closest friends from home came to visit me. We went and experienced Machu Pichu together. This tattoo commemorates that time we sat on top of the world (literally) and reminsced about our friendship. I felt so happy. So grateful for that moment. I will also add my brother Harvey got the same matching tattoo. I only paid $10 because I brought the artist so much business that summer.</p>
+</div>
+<button class="accordion2">Lotus Flower: Select here to learn more</button>
+<div class="panel">
+  <p>I got the opportunity to travel to Bangkok Thailand spring break 2018. My partner and I got funding to attend a women's conference. It was my first time traveling to Thailand. I was surrounded by so much magic and beauty that the country possessed. And I got to meet women from all over the world, leaving inspired and empowered to do more. My partner and I got tattoos. I've wanted a water color lotus flower because lotus flowers represent resiliency and strength. This was my way of reminding myself that I to am like a lotus flower. Resilient and Strong.</p>
+</div>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>   
+<script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+} 
+</script> 
+</main>
+</body>
+</html>
